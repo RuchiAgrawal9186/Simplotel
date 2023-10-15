@@ -3,26 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>food website</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Noto+Sans&family=Poppins:wght@400;500;600&family=Roboto&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Kanit:wght@200;400&family=Noto+Sans&family=Poppins:wght@400;500;600&family=Roboto&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Kanit:wght@200;400&family=Noto+Sans&family=Poppins:wght@400;500;600&family=Roboto&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="main">
         <div class="nav">
 
-            <div class="navpart1">
-                <h4>H o m e</h4>
-                <h4>O r d e r</h4>
-                <h4>F o o d</h4>
-                <h4>R e s t a u r a n t</h4>
-                <h4>T e s t i m o n i a l s</h4>
-                <h4>C o n t a c t U s</h4>
+            <div class="navpart1" id="menuitems">
+                <h4>Home</h4>
+                <h4>Order</h4>
+                <h4>Food</h4>
+                <h4>Restaurant</h4>
+                <h4>Testimonials</h4>
+                <h4>Contact Us</h4>
             </div>
             <div class="navpart2">
-                <i class="ri-whatsapp-line" class="call"></i>
-                <i class="ri-shopping-cart-2-fill" class="cart"></i>
+                <i class="ri-whatsapp-line ri-2x call"  ></i>
+                <i class="ri-shopping-cart-2-fill ri-2x cart" ></i>
+                <i class="ri-menu-line ri-2x menubar" onclick="toggleMenu()" ></i>
                 
             </div>
 
@@ -31,6 +42,13 @@
 
         <div class="content">
             <img src="./img1.jpg" alt="image1">
+        </div>
+        <div class="loremdiv">
+            <h1>LOREM IPSUM</h1>
+            <p>Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took
+                a galley of type and scrambled it to make a type
+                specimen book.</p>
         </div>
 
         <div class="menu">
@@ -60,4 +78,10 @@
     </div>
     
 </body>
+<script>
+    function toggleMenu() {
+    var navPart1 = document.getElementById('menuitems');
+    navPart1.classList.toggle('active');
+}
+    </script>
 </html>
