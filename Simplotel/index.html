@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,31 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Noto+Sans&family=Poppins:wght@400;500;600&family=Roboto&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Noto+Sans&family=Poppins:wght@400;500;600&family=Roboto&family=Work+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Kanit:wght@200;400&family=Noto+Sans&family=Poppins:wght@400;500;600&family=Roboto&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Kanit:wght@200;400&family=Noto+Sans&family=Poppins:wght@400;500;600&family=Roboto&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Kanit:wght@200;400&family=Noto+Sans&family=Poppins:wght@400;500;600&family=Roboto&family=Work+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Kanit:wght@200;400&family=Noto+Sans&family=Poppins:wght@400;500;600&family=Roboto&family=Work+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
     <div class="main">
         <div class="nav">
 
-            <div class="navpart1" id="menuitems">
+            <i class="ri-menu-line ri-2x menubar"></i>
+
+            <div class="navpart1">
                 <h4>Home</h4>
                 <h4>Order</h4>
                 <h4>Food</h4>
@@ -30,11 +40,11 @@
                 <h4>Testimonials</h4>
                 <h4>Contact Us</h4>
             </div>
+
             <div class="navpart2">
-                <i class="ri-whatsapp-line ri-2x call"  ></i>
-                <i class="ri-shopping-cart-2-fill ri-2x cart" ></i>
-                <i class="ri-menu-line ri-2x menubar" onclick="toggleMenu()" ></i>
-                
+                <i class="ri-whatsapp-line ri-2x call"></i>
+                <i class="ri-shopping-cart-2-fill ri-2x cart"></i>
+
             </div>
 
 
@@ -52,36 +62,31 @@
         </div>
 
         <div class="menu">
-             <h1>Order now</h1>
+            <h1>Order now</h1>
             <div class="cardContainer">
-            <div class="card">
-                <img src="./img4.jpg" alt="4">
-                <h3>BURGER</h3>
-                <p>Lorem Ipsum has been the industry's standard dummy text</p>
+                <div class="card">
+                    <img src="./img4.jpg" alt="4">
+                    <h3>BURGER</h3>
+                    <p>Lorem Ipsum has been the industry's standard dummy text</p>
+                </div>
+                <div class="card">
+                    <img src="./img2.jpg" alt="2">
+                    <h3>PIZZA</h3>
+                    <p>Lorem Ipsum has been the industry's standard dummy text</p>
+                </div>
+                <div class="card">
+                    <img src="./img3.jpg" alt="3">
+                    <h3>PASTA</h3>
+                    <p>Lorem Ipsum has been the industry's standard dummy text</p>
+                </div>
             </div>
-            <div class="card">
-                <img src="./img2.jpg" alt="2">
-                <h3>PIZZA</h3>
-                <p>Lorem Ipsum has been the industry's standard dummy text</p>
-            </div>
-            <div class="card">
-                <img src="./img3.jpg" alt="3">
-                <h3>PASTA</h3>
-                <p>Lorem Ipsum has been the industry's standard dummy text</p>
-            </div>
-        </div>
 
-        <button>order</button>
+            <button>order</button>
 
         </div>
 
     </div>
-    
+
 </body>
-<script>
-    function toggleMenu() {
-    var navPart1 = document.getElementById('menuitems');
-    navPart1.classList.toggle('active');
-}
-    </script>
+
 </html>
